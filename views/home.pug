@@ -1,0 +1,47 @@
+extends base.pug
+
+block script
+    script
+            include ../static/script.js
+
+block style 
+    style 
+            include ../static/style.css
+
+block content   
+        section#intro-section 
+            div.intro-heading Welcome to PK Dance academy 
+            div.intro-subheading live to dance...!!! 
+
+        section#courses-section
+            | Courses we offer...
+            .card-course-container 
+                .card-course#card-course-flip-1
+                    | solo 
+                    .course-name 
+                        img(src="../static/Images/solo-red.png", alt="")
+                    .course-name-back#card-back-1 
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure repudiandae, accusantium ipsa mollitia aliquam id excepturi deserunt saepe culpa! Veniam sunt ipsam saepe?
+
+                .card-course#card-course-flip-2
+                    | couple 
+                    .course-name
+                        img(src="../static/Images/couple-red.png", alt="")
+                    .course-name-back#card-back-2
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure repudiandae, accusantium ipsa mollitia aliquam id excepturi deserunt saepe culpa! Veniam sunt ipsam saepe?
+
+                .card-course#card-course-flip-3
+                    | hiphop
+                    .course-name
+                        img(src="../static/Images/hiphop-red.png", alt="")
+                    .course-name-back#card-back-3
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure repudiandae, accusantium ipsa mollitia aliquam id excepturi deserunt saepe culpa! Veniam sunt ipsam saepe?
+
+        section#sponser-section
+            | Our Sponsers
+            .sponser-container
+                img(src="../static/Images/facebook.png", alt="")
+                img(src="../static/Images/google.png", alt="")
+                img(src="../static/Images/instagram.png", alt="")
+                img(src="../static/Images/whatsapp.png", alt="")
+                img(src="../static/Images/youtube.png", alt="")

@@ -1,0 +1,23 @@
+doctype html
+html 
+    head 
+        title
+        block script 
+        block style 
+
+    body
+        nav#navbar
+            .logo-cont 
+                //- | PK Dance Academy 
+                .logo-img 
+                    img(src="../static/Images/logo - red.png", alt="No Image Found")
+            ul 
+                li #[a(href = "/" class=(isActive('/')?'active':'')) Home]
+                li #[a(href = "/aboutus" class=(isActive('/aboutus')?'active':'')) About Us] 
+                li #[a(href = "/trainee" class=(isActive('/trainee')?'active':'')) Trainers] 
+                li #[a(href = "/service" class=(isActive('/service')?'active':'')) Services]
+                li #[a(href = "/feestructure" class=(isActive('/feestructure')?'active':'')) FeeStructure] 
+                li #[a(href = "/contactus" class=(isActive('/contactus')?'active':'')) Contact Us] 
+        block content 
+        footer#footer
+            | copyright registered| Copying PK Dance Academy template is offense 
